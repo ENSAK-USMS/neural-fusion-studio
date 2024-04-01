@@ -3,11 +3,9 @@
  * Date: Dec 31, 2023
  * Time: 9:27:16 PM
 */
-package com.nfs.app.controllers;
+package com.nfs.app.controllers.trainning_history;
 
 import java.io.IOException;
-import java.util.Date;
-
 import com.nfs.app.App;
 import com.nfs.app.algorithms.Algorithm_Abstract;
 

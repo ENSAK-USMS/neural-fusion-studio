@@ -3,7 +3,7 @@
  * Date: Dec 20, 2023
  * Time: 3:50:28 PM
 */
-package com.nfs.app.controllers;
+package com.nfs.app.controllers.dashboard;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.nfs.app.App;
+import com.nfs.app.controllers.base.BaseController;
 import com.nfs.app.preprocessing.MissingValues;
 import com.nfs.app.preprocessing.RemoveDuplicates;
 
@@ -23,10 +24,8 @@ import javafx.scene.chart.BarChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
-import javafx.scene.control.Labeled;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
@@ -48,7 +47,7 @@ public class DataSetFiltersController {
     @FXML
     private Label attr_info_missing;
 
-
+    @FXML
     private Button close_filter_pane_btn;
 
     @FXML

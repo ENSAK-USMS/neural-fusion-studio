@@ -3,18 +3,16 @@
  * Date: 29 déc. 2023
  * Time: 12:43:42
 */
-package com.nfs.app.controllers;
+package com.nfs.app.controllers.dashboard;
 
 import java.io.FileOutputStream;
 
 import com.nfs.app.algorithms.Algorithm_Abstract;
+import com.nfs.app.controllers.base.BaseController;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.Pane;
-import weka.classifiers.Evaluation;
-import weka.core.Instances;
-import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
 import java.io.File;
 import java.nio.file.Paths;
@@ -30,13 +28,7 @@ public class TrainingResultsController {
     private Pane resultParent;
     @FXML
     private TextArea resultsTextArea;
-
-    private Instances dataSet;
     private Algorithm_Abstract model;
-
-    public void setDataSet(Instances dataSet) {
-        this.dataSet = dataSet;
-    }
 
     public void setModel(Algorithm_Abstract model) {
         this.model = model;

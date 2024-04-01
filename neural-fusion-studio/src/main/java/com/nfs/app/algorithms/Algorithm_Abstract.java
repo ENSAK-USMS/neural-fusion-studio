@@ -7,7 +7,6 @@ package com.nfs.app.algorithms;
 
 import java.io.Serializable;
 
-import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import weka.classifiers.Evaluation;
 import weka.core.Instances;

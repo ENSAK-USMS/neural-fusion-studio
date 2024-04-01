@@ -3,7 +3,7 @@
  * Date: Dec 10, 2023
  * Time: 1:36:27 AM
 */
-package com.nfs.app.controllers;
+package com.nfs.app.controllers.dashboard;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -39,10 +39,9 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 
-import org.controlsfx.control.ToggleSwitch;
-
 import com.nfs.app.App;
 import com.nfs.app.algorithms.Algorithm_Abstract;
+import com.nfs.app.controllers.base.BaseController;
 import com.nfs.app.preprocessing.DataImportation;
 
 import javafx.animation.Interpolator;
@@ -360,7 +359,6 @@ public class DashboardController {
             TrainingResultsController trainingResultsController = loader.getController();
             
             // // Now you can access the methods or properties of the TrainingResultsController
-            trainingResultsController.setDataSet(dataSet);
             System.out.println(trainingAlgorithm.getName());
             // set the evaluation results
             System.out.println(trainingAlgorithm.getEvaluationResults().toSummaryString());

@@ -22,7 +22,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="dashboardAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="830.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.DashboardController">
+<AnchorPane fx:id="dashboardAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="830.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.dashboard.DashboardController">
    <children>
       <Arc fill="TRANSPARENT" layoutX="415.0" layoutY="258.0" length="88.0" radiusX="162.0" radiusY="161.0" startAngle="1.0" stroke="#d43e3e" strokeType="INSIDE" strokeWidth="22.0" type="ROUND" visible="false" />
       <Arc fill="TRANSPARENT" layoutX="415.0" layoutY="258.0" length="88.0" radiusX="162.0" radiusY="161.0" startAngle="91.0" stroke="#d43e3e" strokeType="INSIDE" strokeWidth="22.0" type="ROUND" visible="false" />
@@ -146,6 +146,32 @@
             <Line endX="10.0" layoutX="166.08235509600522" layoutY="186.68805839711348" rotate="413.2394487827053" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
             <Line endX="10.0" layoutX="159.69360563025336" layoutY="190.98043400940855" rotate="418.9690267340135" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
             <Line endX="10.0" layoutX="152.9082507780056" layoutY="194.6135549353134" rotate="424.6986046853217" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="145.79408756200542" layoutY="197.5511202314864" rotate="430.4281826366299" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="138.4221983494774" layoutY="199.7637787165183" rotate="436.1577605879381" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="130.8662406206106" layoutY="201.22942223823418" rotate="441.88733853924634" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="123.20171100736424" layoutY="201.9334065710425" rotate="447.61691649055456" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="115.50519095607723" layoutY="201.86869773619605" rotate="453.3464944418628" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="107.85358155097077" layoutY="201.03594228298275" rotate="459.076072393171" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="100.3233351439349" layoutY="199.44346082861875" rotate="464.8056503444792" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="92.98969146790019" layoutY="197.10716492139164" rotate="470.5352282957874" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="85.92592586629726" layoutY="194.05039805772975" rotate="476.26480624709563" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="79.2026171500469" layoutY="190.30370244170197" rotate="481.99438419840385" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="72.88694239741147" layoutY="185.90451381741073" rotate="487.72396214971207" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="67.04200574283479" layoutY="180.89678742341152" rotate="493.4535401010203" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="61.72620786129025" layoutY="175.33055880649897" rotate="499.1831180523285" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="56.992662448041045" layoutY="169.26144388306264" rotate="504.9126960036367" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="52.88866552415429" layoutY="162.75008324323488" rotate="510.6422739549449" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="49.455222870292445" layoutY="155.8615362501592" rotate="516.3718519062531" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="46.72664031050765" layoutY="148.66463098833947" rotate="522.1014298575614" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="44.730180939787786" layoutY="141.23127655617125" rotate="527.8310078088696" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="43.48579272022337" layoutY="133.63574457400046" rotate="533.5605857601778" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="43.00590916756424" layoutY="125.95392708664389" rotate="539.290163711486" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="43.295325119640154" layoutY="118.26257827516393" rotate="545.0197416627942" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="44.35114882792614" layoutY="110.63854755446303" rotate="550.7493196141024" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="46.16283085093795" layoutY="103.1580117193329" rotate="556.4788975654106" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="48.71226946076408" layoutY="95.8957138111018" rotate="562.2084755167189" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="51.97399150954753" layoutY="88.92421630987224" rotate="567.938053468027" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
+            <Line endX="10.0" layoutX="55.9154069487588" layoutY="82.31317611420582" rotate="573.6676314193352" stroke="#6b6b6b" strokeLineCap="ROUND" strokeWidth="2.0" />
             <Label alignment="CENTER" layoutX="68.0" layoutY="88.0" prefHeight="75.0" prefWidth="122.0" text="GO" textFill="WHITE">
                <font>
                   <Font name="Yu Gothic Regular" size="37.0" />
@@ -312,5 +338,30 @@
             </Label>
          </children>
       </Pane>
+      <HBox layoutX="263.0" layoutY="59.0" prefHeight="30.0" prefWidth="300.0" style="-fx-background-radius: 15; -fx-background-color: #242322; -fx-border-width: 4 3.5 4 3.5; -fx-border-color: #242322; -fx-border-radius: 15;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-radius: 10 0 0 10; -fx-border-radius: 10 0 0 10; -fx-background-color: #323232;" text="Machine Learning" textFill="#8c8989">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+            </Button>
+            <Line endY="27.4" strokeType="OUTSIDE" strokeWidth="2.0" />
+            <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" style="-fx-background-radius: 0 10 10 0; -fx-background-radius: 0 10 10 0; -fx-background-color: #565656;" text="Deep Learning" textFill="#8c8989">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="12.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/icons8-crown-48.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+         </padding>
+      </HBox>
    </children>
 </AnchorPane>

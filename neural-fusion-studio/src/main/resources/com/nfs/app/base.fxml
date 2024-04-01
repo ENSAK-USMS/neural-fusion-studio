@@ -17,7 +17,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.controlsfx.control.ToggleSwitch?>
 
-<AnchorPane fx:id="basePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #1a1a1a; -fx-border-color: #121212aa;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.BaseController">
+<AnchorPane fx:id="basePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #1a1a1a; -fx-border-color: #121212aa;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.base.BaseController">
    <children>
       <AnchorPane fx:id="pagePane" layoutX="-0.5">
          <children>
@@ -101,15 +101,15 @@
                                  </cursor>
                            </ImageView>
                            </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
                         </Group>
-                     <Line fx:id="sideBareHline1" endX="70.0" layoutY="230.0" />
-                     <Line fx:id="sideBareHline2" endX="70.0" layoutY="300.0" />
-                     <Line fx:id="sideBareHline3" endX="70.0" layoutY="370.0" />
-                     <Line fx:id="sideBareHline4" endX="70.0" layoutY="440.0" />
+                     <Line fx:id="sideBarHline1" endX="70.0" layoutY="230.0" />
                         <Group layoutX="15.0" layoutY="8.0" onMouseClicked="#swithToHomePage">
                            <children>
-                              <Button layoutX="-15.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#swithToHomePage" prefHeight="65.0" prefWidth="68.0" style="-fx-background-color: transparent;" styleClass="hoverable" stylesheets="@styles/index.css" />
-                           <ImageView fitHeight="42.0" fitWidth="43.0" layoutY="236.0" mouseTransparent="true" onMouseClicked="#swithToHomePage" preserveRatio="true">
+                              <Button layoutX="-15.0" layoutY="223.0" mnemonicParsing="false" onMouseClicked="#swithToHomePage" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" styleClass="hoverable" stylesheets="@styles/index.css" />
+                           <ImageView fitHeight="40.0" fitWidth="40.0" layoutY="236.0" mouseTransparent="true" onMouseClicked="#swithToHomePage" preserveRatio="true">
                               <image>
                                 <Image url="@images/sidemenubutton1.png" />
                               </image>
@@ -119,15 +119,29 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Group>
+                     <Line fx:id="sideBarHline2" endX="70.0" layoutY="300.0" />
                         <Group onMouseClicked="#swithToHistoryPage">
                            <children>
-                              <Button layoutX="-1.0" layoutY="299.0" mnemonicParsing="false" onAction="#swithToHistoryPage" prefHeight="69.0" prefWidth="67.0" style="-fx-background-color: transparent;" styleClass="hoverable" />
-                           <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="15.0" layoutY="315.0" mouseTransparent="true" preserveRatio="true">
+                              <Button layoutX="-1.0" layoutY="299.0" mnemonicParsing="false" onAction="#swithToHistoryPage" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent;" styleClass="hoverable" />
+                           <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="15.0" layoutY="313.0" mouseTransparent="true" preserveRatio="true">
                               <image>
                                 <Image url="@images/sidemenubutton2.png" />
                               </image>
                            </ImageView>
-                              <Label layoutX="-17.0" layoutY="416.0" rotate="50.0" style="-fx-background-color: red;" text="Beta" textFill="#fafafa">
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Group>
+                     <Line fx:id="sideBarHline3" endX="70.0" layoutY="370.0" />
+                        <Group>
+                           <children>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="15.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/neural-network.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="-16.0" layoutY="416.0" rotate="44.0" style="-fx-background-color: red;" text="Beta" textFill="#fafafa">
                                  <padding>
                                     <Insets left="20.0" right="15.0" />
                                  </padding>
@@ -135,17 +149,29 @@
                                     <Font name="Bookshelf Symbol 7" size="12.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="1.0" layoutY="441.0" mouseTransparent="true" pickOnBounds="false" prefWidth="37.0" style="-fx-background-color: #232323;" />
+                              <Label layoutY="440.0" mouseTransparent="true" pickOnBounds="false" prefWidth="37.0" style="-fx-background-color: #232323;" />
                            </children>
-                           <cursor>
-                              <Cursor fx:constant="HAND" />
-                           </cursor>
                         </Group>
-                        <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="15.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@images/neural-network.png" />
-                           </image>
-                        </ImageView>
+                     <Line fx:id="sideBarHline4" endX="70.0" layoutY="440.0" />
+                        <Group fx:id="sidebarLabels" layoutX="82.0" layoutY="253.0" visible="false">
+                           <children>
+                              <Label text="Dashboard" textFill="#484848">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="74.0" text="Models History" textFill="#484848">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutY="140.0" text="Deep Learning" textFill="#484848">
+                                 <font>
+                                    <Font name="Arial Rounded MT Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Group>
                    </children>
                  </Pane>
                  <Pane fx:id="sideBarShadow1" layoutX="70.5" prefHeight="600.0" prefWidth="2.0" style="-fx-background-color: #131313;" />

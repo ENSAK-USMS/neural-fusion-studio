@@ -4,19 +4,15 @@
  * Time: 5:01:44 PM
 */
 package com.nfs.app.algorithms.classification;
-import java.io.Serializable;
-
 import com.nfs.app.App;
 import com.nfs.app.algorithms.Algorithm_Abstract;
 
 import javafx.scene.control.Label;
 import weka.classifiers.Evaluation;
 import weka.classifiers.functions.LinearRegression;
-import javafx.scene.text.Font;
-import javafx.scene.text.FontWeight;
 import javafx.scene.layout.GridPane;
 
-public class LinearRegressionAlgorithm extends Algorithm_Abstract implements Serializable {
+public class LinearRegressionAlgorithm extends Algorithm_Abstract {
     private LinearRegression linearRegression;
 
 

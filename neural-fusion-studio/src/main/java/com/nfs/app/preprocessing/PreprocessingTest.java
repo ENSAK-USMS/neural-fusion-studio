@@ -11,8 +11,8 @@ public class PreprocessingTest {
         Instances instances = createDummyDataset();
 
         // Test removeAttributes(String[] attributeNames)
-        String[] attributeNamesToRemove = {"mx-missile", "immigration"};
-        Preprocessing preprocessing = new Preprocessing(instances);
+        // String[] attributeNamesToRemove = {"mx-missile", "immigration"};
+        // Preprocessing preprocessing = new Preprocessing(instances);
         // preprocessing.removeAttributes(attributeNamesToRemove);
         System.out.println("Attributes removed successfully.");
         // save copy of the dataset

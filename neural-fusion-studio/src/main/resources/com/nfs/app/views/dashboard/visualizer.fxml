@@ -26,7 +26,7 @@
 <?import javafx.scene.text.Font?>
 <?import org.controlsfx.control.CheckComboBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: transparent;" stylesheets="@../../styles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.DataSetVisualizerController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: transparent;" stylesheets="@../../styles/dashboard.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.dashboard.DataSetVisualizerController">
    <children>
       <AnchorPane fx:id="anchorPane" layoutX="42.0" layoutY="23.0" maxHeight="570.0" maxWidth="810.0" minHeight="250.0" minWidth="350.0" prefHeight="557.0" prefWidth="810.0" style="-fx-background-color: #3b3b3b; -fx-border-color: black;">
          <children>

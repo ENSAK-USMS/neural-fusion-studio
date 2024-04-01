@@ -3,7 +3,7 @@
  * Date: Dec 19, 2023
  * Time: 12:43:01 PM
 */
-package com.nfs.app.controllers;
+package com.nfs.app.controllers.dashboard;
 
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -12,6 +12,9 @@ import javafx.scene.control.TableColumn.CellDataFeatures;
 import javafx.scene.control.TableColumn.CellEditEvent;
 import javafx.scene.control.cell.TextFieldTableCell;
 import javafx.beans.value.ObservableValue;
+
+import com.nfs.app.controllers.base.BaseController;
+
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;

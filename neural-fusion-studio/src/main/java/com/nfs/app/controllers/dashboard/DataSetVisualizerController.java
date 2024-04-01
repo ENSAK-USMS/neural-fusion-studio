@@ -3,7 +3,7 @@
  * Date: 24 déc. 2023
  * Time: 11:43:59
 */
-package com.nfs.app.controllers;
+package com.nfs.app.controllers.dashboard;
 
 import javafx.collections.ListChangeListener;
 import javafx.fxml.FXML;
@@ -16,6 +16,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 import org.controlsfx.control.CheckComboBox;
+
+import com.nfs.app.controllers.base.BaseController;
+
 import weka.core.Attribute;
 import weka.core.Instances;
 import weka.core.matrix.Matrix;

@@ -1,24 +1,15 @@
-package com.nfs.app.controllers;
+package com.nfs.app.controllers.trainning_history;
 
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.scene.shape.Line;
-import javafx.util.Duration;
-
 import java.io.File;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.ResourceBundle;
 
 // import for sorting algorithms by date
@@ -29,7 +20,6 @@ import java.util.Comparator;
 import java.util.Date;
 
 
-import com.nfs.app.App;
 import com.nfs.app.algorithms.Algorithm_Abstract;
 
 public class HistoryController implements Initializable {

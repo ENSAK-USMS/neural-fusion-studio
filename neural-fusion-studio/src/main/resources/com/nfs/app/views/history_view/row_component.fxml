@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:id="historyPane" prefHeight="54.0" prefWidth="780.0" style="-fx-background-color: #363636; -fx-border-width: 0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.HistoryRowController">
+<Pane fx:id="historyPane" prefHeight="54.0" prefWidth="780.0" style="-fx-background-color: #363636; -fx-border-width: 0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.trainning_history.HistoryRowController">
    <children>
       <Line fx:id="line" endX="670.0" endY="55.0" startX="100.0" startY="55.0" stroke="#1a1a1a" visible="false" />
       <ImageView fx:id="dropDown" fitHeight="25.0" fitWidth="25.0" layoutX="7.0" layoutY="16.0" onMouseClicked="#onDropDownClick" pickOnBounds="true" preserveRatio="true">

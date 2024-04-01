@@ -5,17 +5,14 @@
 */
 package com.nfs.app.algorithms.classification;
 
-import java.io.Serializable;
-
 import com.nfs.app.App;
 import com.nfs.app.algorithms.Algorithm_Abstract;
 
-import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomTree;
 
-public class DecisionTreeAlgorithm extends Algorithm_Abstract implements Serializable {
+public class DecisionTreeAlgorithm extends Algorithm_Abstract {
     private RandomTree randomTree;
 
     public DecisionTreeAlgorithm() {
