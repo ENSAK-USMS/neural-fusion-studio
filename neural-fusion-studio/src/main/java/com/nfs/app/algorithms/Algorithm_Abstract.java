@@ -6,10 +6,12 @@
 package com.nfs.app.algorithms;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javafx.scene.layout.GridPane;
 import weka.classifiers.Evaluation;
 import weka.core.Instances;
+import weka.core.Option;
 
 public abstract class Algorithm_Abstract implements Serializable {
         protected Instances dataset;
@@ -57,6 +59,9 @@ public abstract class Algorithm_Abstract implements Serializable {
         public String getDefaultOptions() {
             return "";
         }
+        
+        // get list of options
+        public abstract List<Option> getListOfOptions();
 
         public abstract String getName();
 

@@ -4,12 +4,16 @@
  * Time: 5:01:44 PM
 */
 package com.nfs.app.algorithms.classification;
+import java.util.Collections;
+import java.util.List;
+
 import com.nfs.app.App;
 import com.nfs.app.algorithms.Algorithm_Abstract;
 
 import javafx.scene.control.Label;
 import weka.classifiers.Evaluation;
 import weka.classifiers.functions.LinearRegression;
+import weka.core.Option;
 import javafx.scene.layout.GridPane;
 
 public class LinearRegressionAlgorithm extends Algorithm_Abstract {
@@ -126,6 +130,11 @@ public class LinearRegressionAlgorithm extends Algorithm_Abstract {
             gridPane.add(notAvailableLabel, 0, 0);
         }
         return gridPane;
+    }
+
+    @Override
+    public List<Option> getListOfOptions() {
+        return Collections.list(linearRegression.listOptions());
     }
 }
 

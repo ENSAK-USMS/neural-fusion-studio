@@ -42,8 +42,10 @@ import java.util.HashMap;
 import com.nfs.app.App;
 import com.nfs.app.algorithms.Algorithm_Abstract;
 import com.nfs.app.controllers.base.BaseController;
+import com.nfs.app.controllers.dashboard.algorithm_args.AlgorithmArgs;
 import com.nfs.app.preprocessing.DataImportation;
 
+import javafx.animation.FadeTransition;
 import javafx.animation.Interpolator;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -54,7 +56,7 @@ public class DashboardController {
 
     @FXML
     private AnchorPane dashboardAnchorPane;
-    
+
     @FXML
     private Pane outerCirclePane;
 
@@ -63,13 +65,13 @@ public class DashboardController {
 
     @FXML
     private Group dataSetSubCircleAnimation1, dataSetSubCircleAnimation2, dataSetSubCircleAnimation3,
-            dataSetLoadedIcon;
+        dataSetLoadedIcon;
 
     @FXML
     private ProgressIndicator dataSetOpenProgress;
 
     @FXML
-    private HBox clasificationOptions,clustringOptions,optionalArgs;
+    private HBox clasificationOptions, clustringOptions, optionalArgs;
 
     @FXML
     private TextField optionsField;
@@ -91,6 +93,7 @@ public class DashboardController {
     private Algorithm_Abstract trainingAlgorithm;
 
     private String selectedAlgorithm;
+    private AlgorithmArgs algorithArgs;
 
     private HashMap<String, Algorithm_Abstract> algorithms = new HashMap<String, Algorithm_Abstract>();
 
@@ -164,6 +167,17 @@ public class DashboardController {
             return;
         }
         optionalArgs.setVisible(true);
+        algorithArgs = new AlgorithmArgs(algorithms.get(selectedAlgorithm));
+        algorithArgs.setOpacity(0);
+        dashboardAnchorPane.getChildren().add(algorithArgs);
+        
+        // Create a fade in animation
+        FadeTransition fadeIn = new FadeTransition(Duration.seconds(0.5), algorithArgs);
+        fadeIn.setFromValue(0);
+        fadeIn.setToValue(1);
+        
+        // Play the fade in animation
+        fadeIn.play();
     }
 
     @FXML
@@ -502,7 +516,13 @@ public class DashboardController {
 
     
 
-    
+    @FXML
+    private void handleDashboardClicksEvents(MouseEvent mouseEvent) {
+        if (algorithArgs!= null && !algorithArgs.getBoundsInParent().contains(mouseEvent.getX(), mouseEvent.getY())) {
+            dashboardAnchorPane.getChildren().remove(algorithArgs);
+            mouseEvent.consume();
+        }
+    }
 
 
 

@@ -5,12 +5,16 @@
 */
 package com.nfs.app.algorithms.classification;
 
+import java.util.Collections;
+import java.util.List;
+
 import com.nfs.app.App;
 import com.nfs.app.algorithms.Algorithm_Abstract;
 
 import javafx.scene.layout.GridPane;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.RandomForest;
+import weka.core.Option;
 
 public class RandomForestAlgorithm extends Algorithm_Abstract {
     private RandomForest randomForest;
@@ -82,5 +86,10 @@ public class RandomForestAlgorithm extends Algorithm_Abstract {
     @Override
     public GridPane getOtherResults() {
         return new GridPane();
+    }
+
+    @Override
+    public List<Option> getListOfOptions() {
+        return Collections.list( randomForest.listOptions() );
     }
 }

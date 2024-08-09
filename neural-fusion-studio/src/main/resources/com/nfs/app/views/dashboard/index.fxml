@@ -13,6 +13,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.RadialGradient?>
@@ -22,7 +23,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="dashboardAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="830.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.dashboard.DashboardController">
+<AnchorPane fx:id="dashboardAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#handleDashboardClicksEvents" prefHeight="560.0" prefWidth="830.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nfs.app.controllers.dashboard.DashboardController">
    <children>
       <Arc fill="TRANSPARENT" layoutX="415.0" layoutY="258.0" length="88.0" radiusX="162.0" radiusY="161.0" startAngle="1.0" stroke="#d43e3e" strokeType="INSIDE" strokeWidth="22.0" type="ROUND" visible="false" />
       <Arc fill="TRANSPARENT" layoutX="415.0" layoutY="258.0" length="88.0" radiusX="162.0" radiusY="161.0" startAngle="91.0" stroke="#d43e3e" strokeType="INSIDE" strokeWidth="22.0" type="ROUND" visible="false" />
@@ -363,5 +364,120 @@
             <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
          </padding>
       </HBox>
+      <Pane layoutX="237.0" layoutY="40.0" prefHeight="435.0" prefWidth="350.0" style="-fx-background-color: #313131; -fx-background-radius: 5;">
+         <children>
+            <HBox prefHeight="435.0" prefWidth="350.0">
+               <children>
+                  <Line endY="432.0" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.18000000715255737" green="0.18000000715255737" blue="0.18000000715255737" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.49125168236877503">
+                                 <color>
+                                    <Color red="0.5372549295425415" green="0.18039216101169586" blue="0.1882352977991104" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.18000000715255737" green="0.18000000715255737" blue="0.18000000715255737" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+                  <Pane prefWidth="344.0">
+                     <children>
+                        <ImageView fitHeight="52.0" fitWidth="250.0" layoutX="52.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/text-images/image.png" />
+                           </image>
+                        </ImageView>
+                        <VBox layoutX="4.0" layoutY="59.0" minHeight="260.0" prefWidth="330.0" spacing="10.0">
+                           <children>
+                              <VBox alignment="CENTER_RIGHT" nodeOrientation="LEFT_TO_RIGHT">
+                                 <children>
+                                    <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="26.0" prefWidth="287.0" spacing="10.0">
+                                       <children>
+                                          <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefWidth="130.0" text="batchSize" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                             <font>
+                                                <Font size="11.0" />
+                                             </font>
+                                          </Label>
+                                          <VBox alignment="CENTER" prefWidth="250.0">
+                                             <children>
+                                                <TextField prefHeight="25.0" prefWidth="250.0" style="-fx-background-radius: 0;" />
+                                                <Button mnemonicParsing="false" prefWidth="250.0" style="-fx-background-color: c644c6; -fx-background-radius: 0 0 5 5; -fx-border-radius: 0 0 5 5;" text="You Could Gain 175% Accuracy By Changing Value To 50" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="8.0" />
+                                                   </font>
+                                                   <cursor>
+                                                      <Cursor fx:constant="HAND" />
+                                                   </cursor>
+                                                </Button>
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" prefWidth="343.0" spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefWidth="130.0" text="buildRegressionTree" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                                       <font>
+                                          <Font size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <VBox alignment="CENTER">
+                                       <children>
+                                          <TextField prefHeight="25.0" prefWidth="250.0" style="-fx-background-radius: 0;" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="52.0" fitWidth="78.0" layoutX="146.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/AI-generate-hover.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Line endY="432.0" strokeWidth="3.0">
+                     <stroke>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.18000000715255737" green="0.18000000715255737" blue="0.18000000715255737" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="0.49125168236877503">
+                                 <color>
+                                    <Color red="0.5372549295425415" green="0.18039216101169586" blue="0.1882352977991104" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.18000000715255737" green="0.18000000715255737" blue="0.18000000715255737" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </LinearGradient>
+                     </stroke>
+                  </Line>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
